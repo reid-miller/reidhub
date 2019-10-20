@@ -1,0 +1,86 @@
+@charset "utf-8";
+#header h1 {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+}
+#profile-pic {
+    display: inline-block;
+}
+#body {
+    text-align: center;
+    margin: auto;   
+}
+#about-me {
+    display: inline-block;
+    width: 33%;
+    margin: 5px;
+    vertical-align: top;
+    text-align: left;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: medium;
+}
+#background {
+    color: #000000;
+}
+
+#navigation {
+    margin: auto;
+    border-bottom: thin solid #000000;
+	width: 200px;
+	text-align: center;
+}
+
+#navigation div {
+    margin: 5px;
+    display: inline-block;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: large;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+#rainbow-text {
+	background-image: linear-gradient(to left, violet, indigo, blue, green, orange, red);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+.other-media {
+    text-align: left;
+}
+
+#projectsBody {
+    margin: auto;
+    width: 65%;
+}
+#project-header {
+    text-align: center;
+}
+#project-list {
+	display: table;
+	width: 100%;
+}
+.project {
+    display: table;
+    border-bottom: thin solid #000000;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.project-content {
+    display: table-row;
+}
+.project .description {
+    display: table-cell;
+	vertical-align: top;
+	
+}
+.project .image {
+	text-align: right;
+    display: table-cell;
+    width: 320px;
+    height: 100%;
+}
