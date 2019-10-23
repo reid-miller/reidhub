@@ -40,8 +40,9 @@
 #navigation {
     margin: auto;
     border-bottom: thin solid #000000;
-	width: 200px;
-	text-align: center;
+    width: 200px;
+    text-align: center;
+    padding-top: 1%;
 }
 
 #navigation div {
@@ -87,10 +88,49 @@
     display: table-cell;
 	vertical-align: top;
 	
+	
 }
 .project .image {
 	text-align: right;
     display: table-cell;
     width: 320px;
     height: 100%;
+	padding-left: 2%;
+	padding-top: 5%;
+}
+
+#art-body {
+	
+}
+
+#art-table {
+	padding-top: 3%;
+	margin: auto;
+	display: table;
+}
+
+.art-row {
+	
+}
+
+.image-container {
+	padding: auto;
+    padding-right: 1%;
+    padding-left: 1%;
+    vertical-align: middle;
+    display: table-cell;
+    width: 10%;
+    height: 6%;
+}
+
+/* resize images */
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* resize GIF's */
+.image-container iframe {
+    width: 100%;
+	border: none;
 }
