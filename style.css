@@ -11,3 +11,9 @@
 .spacer {
     padding-top: 20px;
 }
+
+@media screen and (max-width:800px) {  
+    #profile-pic {
+      display: none;
+    }
+  }
