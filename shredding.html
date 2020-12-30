@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html id="html">
+    <body>
+        <canvas id="myCanvas"></canvas>
+    </body>
+    <link rel="stylesheet" href="shredstyle.css">
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        var html = document.getElementById("html")
+        var frameIndex = 0;
+        const frameCount = 850;
+        const img = new Image();
+
+        canvas.width=1158;
+        canvas.height=1370;
+        
+
+        const currentFrame = index => (
+        `data/frame${index.toString()}.jpg`
+        );
+        
+
+        // Create, load and draw the image
+        img.src = currentFrame(1); // we'll make this dynamic in the next step, for now we'll just load image 1 of our sequence
+        img.onload=function(){
+        context.drawImage(img, 0, 0);
+
+
+        window.addEventListener('scroll', () => {  
+        const scrollTop = html.scrollTop;
+        const maxScrollTop = html.scrollHeight - window.innerHeight;
+        const scrollFraction = scrollTop / maxScrollTop;
+        const frameIndex = Math.max(Math.min(
+            frameCount - 1,
+            Math.floor(scrollFraction * frameCount)
+        ), 0);
+        console.log(frameIndex);
+        img.src = currentFrame(frameIndex)
+        context.drawImage(img, 0 , 0)
+        });
+}
+
+    </script>
+</html>
