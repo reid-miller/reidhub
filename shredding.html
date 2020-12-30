@@ -14,6 +14,13 @@
 
         canvas.width=1158;
         canvas.height=1370;
+
+        const preloadImages = () => {
+        for (let i = 1; i < frameCount; i++) {
+            const img = new Image();
+            img.src = currentFrame(i);
+        }
+        };
         
 
         const currentFrame = index => (
@@ -25,6 +32,7 @@
         img.src = currentFrame(1); // we'll make this dynamic in the next step, for now we'll just load image 1 of our sequence
         img.onload=function(){
         context.drawImage(img, 0, 0);
+        }
 
 
         window.addEventListener('scroll', () => {  
@@ -39,7 +47,9 @@
         img.src = currentFrame(frameIndex)
         context.drawImage(img, 0 , 0)
         });
-}
+
+        preloadImages();
+
 
     </script>
 </html>
