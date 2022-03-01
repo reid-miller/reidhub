@@ -52,6 +52,29 @@
 
     <div class="row project">
       <div class="col">
+        <h3 id="trick_calc">Trick Ski Calculator</h3>
+        <p>
+          Created an app to help 3-event skiiers calculate their score for the Trick Ski event. Currently you'll need to 
+          know some of the trick scores to calculate your score. But hoping to make it into a teaching tool for those just
+          starting off with the sport.
+        </p>
+        <p>
+          This is my very first app on the App Store! I created it with React Native so I can deploy to IOS, Android, and the Web with
+          a single code base. Appreciate any feedback or improvments that you would like to see, you can send it into reid@trickcalc.com
+        </p>
+        <a href="https://apps.apple.com/us/app/trick-ski-calculator/id1610600877" target="_blank"><img src="pics/app_store.png"></a>
+        <img id="playBtn" src="pics/google-play-badge.png" href="https://apps.apple.com/us/app/trick-ski-calculator/id1610600877" height="60px">
+        <ul>
+          <li>Or try it on the web: <a href="https://trickcalc.com" target="_blank">trickcalc.com</a></li>
+        </ul>
+      </div>
+      <div class="col text-center" style="display:flex;justify-content:center;align-items:center;">
+          <img src="pics/trick_screen.png" alt="Trick Ski" class="img-fluid project_img rounded">
+      </div>
+    </div>
+    
+    <div class="row project border-top">
+      <div class="col">
         <h3>Stitch</h3>
         <p>
           Created a clothes brand for a Wearable Tech course
@@ -78,7 +101,7 @@
         <h3>SWISS</h3>
         <p>
           SWISS is a tool that helps UW Madison students make informed decisions on their 
-          course selection. Project created for my Software Engineering course where I served as Product Owner and Scrum Master for my team.
+          course selection. This project was created for my Software Engineering course where I served as Product Owner and Scrum Master for my team.
         </p>
         <p>
           Outsides of those roles, I worked mainly on creating automated testing and a web scraper to collect course/professor information.
@@ -91,7 +114,7 @@
           course database.
         </p>
         <ul>
-          <li>Check out project demo video here: <a href="https://www.youtube.com/watch?v=BGwVyuCgJ0k" target="_blank">SWISS Demo</a></li>
+          <li>Check out the project demo video here: <a href="https://www.youtube.com/watch?v=BGwVyuCgJ0k" target="_blank">SWISS Demo</a></li>
         </ul>
       </div>
       <div class="col text-center" style="display:flex;justify-content:center;align-items:center;">
@@ -160,13 +183,12 @@
            a fake tournament equipped with boats, skiiers, ski site, etc. I decided to create an accessable web version so people without to much
            knowledge of competitive 3-event skiing can test out different trick runs before they hit the water.</p>
         <p>I learned React to create this web app</p>
-        <p><strong>Note:</strong> I've since updated this project with React Native so I can release it as an IPhone and Android app. While I 
-          work on getting it published you can check out the new version here: <a href="https://www.trickcalc.com" target="_blank"> trickcalc.com </a>
+        <p><strong>Note:</strong> I've since updated this project with React Native so I can release it as an IPhone and Android app. Check it out
+          <a href="#trick_calc">here</a> 
         </p>
         <ul>
           <!-- <li>Try it out here: <del><a href="https://reid-miller.github.io/Collegiate-Trick-Score-Calculator/" target="_blank">Trick Calculator</a></del</li> -->
-          <li>Try it out the old version: <del>Trick Calculator</del></li> (Currently broken)
-          <li>New version: <a href="https://www.trickcalc.com" target="_blank"> trickcalc.com </a></li>
+          <li>Try it out: <del>Trick Calculator</del></li> (Currently broken)
           <li><a href="https://github.com/reid-miller/Collegiate-Trick-Score-Calculator" target="_blank">GitHub Repo</a></li>
         </ul>
       </div>
@@ -212,6 +234,14 @@
   <!-- Bootstrap core JavaScript -->
   <script src="Bootstrap_site/node_modules/startbootstrap-bare/vendor/jquery/jquery.slim.min.js"></script>
   <script src="Bootstrap_site/node_modules/startbootstrap-bare/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- My 🍝 code -->
+  <script>
+    const playBtn = document.getElementById("playBtn");
+    playBtn.addEventListener("click", event => {
+
+    alert("Not avalible on Play Store yet. You can use trickcalc.com in the meantime!")
+    })
+  </script>
 
 </body>
 
